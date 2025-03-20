@@ -36,4 +36,8 @@ ALTER TABLE prontuario
 ALTER TABLE prontuario
     ADD CONSTRAINT fk_prontuario_tratamento
     FOREIGN KEY (tratamento_id) REFERENCES tratamento(id_tratamento);
+
+INSERT INTO especie (nome_especie) VALUE ('Cachorro');
+INSERT INTO especie (nome_especie) VALUE ('Gato');
+INSERT INTO especie (nome_especie) VALUE ('Coelho');
 ```

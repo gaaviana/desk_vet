@@ -53,4 +53,49 @@ INSERT INTO animal (nome_animal, especie_id) VALUE (
     'Bolinha',
     3
 );
+
+-- alteração na tabela para o id começar a parir de 100(usei mais para eviter confusões em relação ao id)
+ALTER TABLE tratamento AUTO_INCREMENT = 100;
+
+INSERT INTO tratamento (nome_tratamento, obs_tratamento) VALUES (
+    'Vacina Antirrábica', 'Proteção contra raiva'
+),
+(
+    'Vermifugação', 'Controle de vermes intestinais'
+),
+(
+    'Castração', 'Esterilização'
+);
+
+-- como vou manipular todas as colunas, não preciso atribuilas, apenas digitar as informações na ordem esperada
+INSERT INTO prontuario (animal_id, tratamento_id, data_tratamento, observacao) VALUES (
+    1,
+    100,
+    '2025-08-30 11:30:00',
+    'Renovar em 1 ano'
+),
+(
+    1,
+    101,
+    '2025-08-30 11:35:00',
+    'Houve reação alérgica'
+),
+(
+    2,
+    100,
+    '2025-09-02 16:30:00',
+    null
+),
+(
+    2,
+    102,
+    '2025-02-10',
+    'Demorou para voltar da anestesia, mas nada preocupante'
+),
+(
+    3,
+    101,
+    '2025-03-01',
+    null
+);
 ```

@@ -40,4 +40,17 @@ ALTER TABLE prontuario
 INSERT INTO especie (nome_especie) VALUE ('Cachorro');
 INSERT INTO especie (nome_especie) VALUE ('Gato');
 INSERT INTO especie (nome_especie) VALUE ('Coelho');
+
+INSERT INTO animal (nome_animal, especie_id) VALUE (
+    'Meg',
+    1
+),
+(
+    'Luna',
+    2
+),
+(
+    'Bolinha',
+    3
+);
 ```
